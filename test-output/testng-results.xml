@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14429" started-at="2017-09-06T08:53:10Z" finished-at="2017-09-06T08:53:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14429" started-at="2017-09-06T08:53:10Z" finished-at="2017-09-06T08:53:24Z">
+      <class name="com.example.selenium.ide.tests.regres.SubclassDeleteTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@1bce4f0a]" name="setUp" is-config="true" duration-ms="10047" started-at="2017-09-06T11:53:10Z" finished-at="2017-09-06T11:53:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCancelDelettingByCancelButton()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@1bce4f0a]" name="testCancelDelettingByCancelButton" duration-ms="514" started-at="2017-09-06T11:53:20Z" finished-at="2017-09-06T11:53:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCancelDelettingByCancelButton -->
+        <test-method status="PASS" signature="testCancelDelettingByOKConfirmMessageAppear()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@1bce4f0a]" name="testCancelDelettingByOKConfirmMessageAppear" duration-ms="1767" started-at="2017-09-06T11:53:20Z" finished-at="2017-09-06T11:53:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCancelDelettingByOKConfirmMessageAppear -->
+        <test-method status="PASS" signature="testCancelDelettingByX()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@1bce4f0a]" name="testCancelDelettingByX" duration-ms="1499" started-at="2017-09-06T11:53:22Z" finished-at="2017-09-06T11:53:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCancelDelettingByX -->
+        <test-method status="PASS" signature="testConfirmMessageAppear()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@1bce4f0a]" name="testConfirmMessageAppear" duration-ms="256" started-at="2017-09-06T11:53:23Z" finished-at="2017-09-06T11:53:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConfirmMessageAppear -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@1bce4f0a]" name="tearDown" is-config="true" duration-ms="330" started-at="2017-09-06T11:53:24Z" finished-at="2017-09-06T11:53:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.selenium.ide.tests.regres.SubclassDeleteTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

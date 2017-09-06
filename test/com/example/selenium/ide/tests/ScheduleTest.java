@@ -12,7 +12,7 @@ public class ScheduleTest {
 	@Test
 	public void testSchedule() {
 		System.setProperty("webdriver.gecko.driver",
-				"E:\\Lv-256.ATQC\\drivers\\win_x64\\geckodriver-v0.18.0-win64\\geckodriver.exe");
+				"D:\\Lv-256.ATQC\\resurces\\drivers\\geckodriver-v0.18.0-win64\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
