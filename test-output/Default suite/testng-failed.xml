@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testCancelDelettingByX"/>
+          <include name="testCancelDelettingBySystem"/>
         </methods>
       </class> <!-- com.example.selenium.ide.tests.regres.SubclassDeleteTest -->
     </classes>

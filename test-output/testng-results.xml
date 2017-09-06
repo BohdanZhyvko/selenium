@@ -1,37 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14429" started-at="2017-09-06T08:53:10Z" finished-at="2017-09-06T08:53:24Z">
+  <suite name="Default suite" duration-ms="98210" started-at="2017-09-06T21:43:02Z" finished-at="2017-09-06T21:44:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14429" started-at="2017-09-06T08:53:10Z" finished-at="2017-09-06T08:53:24Z">
+    <test name="Default test" duration-ms="98210" started-at="2017-09-06T21:43:02Z" finished-at="2017-09-06T21:44:40Z">
       <class name="com.example.selenium.ide.tests.regres.SubclassDeleteTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@1bce4f0a]" name="setUp" is-config="true" duration-ms="10047" started-at="2017-09-06T11:53:10Z" finished-at="2017-09-06T11:53:20Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@6093dd95]" name="setUp" is-config="true" duration-ms="22466" started-at="2017-09-07T00:43:02Z" finished-at="2017-09-07T00:43:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCancelDelettingByCancelButton()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@1bce4f0a]" name="testCancelDelettingByCancelButton" duration-ms="514" started-at="2017-09-06T11:53:20Z" finished-at="2017-09-06T11:53:20Z">
+        <test-method status="PASS" signature="testCancelDelettingByCancelButton()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@6093dd95]" name="testCancelDelettingByCancelButton" duration-ms="5277" started-at="2017-09-07T00:43:25Z" finished-at="2017-09-07T00:43:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCancelDelettingByCancelButton -->
-        <test-method status="PASS" signature="testCancelDelettingByOKConfirmMessageAppear()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@1bce4f0a]" name="testCancelDelettingByOKConfirmMessageAppear" duration-ms="1767" started-at="2017-09-06T11:53:20Z" finished-at="2017-09-06T11:53:22Z">
+        <test-method status="PASS" signature="testCancelDelettingBySystem()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@6093dd95]" name="testCancelDelettingBySystem" duration-ms="1960" started-at="2017-09-07T00:43:30Z" finished-at="2017-09-07T00:43:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCancelDelettingByOKConfirmMessageAppear -->
-        <test-method status="PASS" signature="testCancelDelettingByX()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@1bce4f0a]" name="testCancelDelettingByX" duration-ms="1499" started-at="2017-09-06T11:53:22Z" finished-at="2017-09-06T11:53:23Z">
+        </test-method> <!-- testCancelDelettingBySystem -->
+        <test-method status="PASS" signature="testCancelDelettingByX()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@6093dd95]" name="testCancelDelettingByX" duration-ms="829" started-at="2017-09-07T00:43:32Z" finished-at="2017-09-07T00:43:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCancelDelettingByX -->
-        <test-method status="PASS" signature="testConfirmMessageAppear()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@1bce4f0a]" name="testConfirmMessageAppear" duration-ms="256" started-at="2017-09-06T11:53:23Z" finished-at="2017-09-06T11:53:24Z">
+        <test-method status="PASS" signature="testConfirmMessageAppear()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@6093dd95]" name="testConfirmMessageAppear" duration-ms="837" started-at="2017-09-07T00:43:33Z" finished-at="2017-09-07T00:43:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConfirmMessageAppear -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@1bce4f0a]" name="tearDown" is-config="true" duration-ms="330" started-at="2017-09-06T11:53:24Z" finished-at="2017-09-06T11:53:24Z">
+        <test-method status="PASS" signature="testDeleteByOkButton()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@6093dd95]" name="testDeleteByOkButton" duration-ms="10783" started-at="2017-09-07T00:43:34Z" finished-at="2017-09-07T00:43:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteByOkButton -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.selenium.ide.tests.regres.SubclassDeleteTest@6093dd95]" name="tearDown" is-config="true" duration-ms="1500" started-at="2017-09-07T00:43:44Z" finished-at="2017-09-07T00:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.example.selenium.ide.tests.regres.SubclassDeleteTest -->
+      <class name="com.example.selenium.ide.tests.DollarCourse">
+        <test-method status="PASS" signature="testCourseUSD()[pri:0, instance:com.example.selenium.ide.tests.DollarCourse@5622fdf]" name="testCourseUSD" duration-ms="24759" started-at="2017-09-07T00:43:46Z" finished-at="2017-09-07T00:44:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCourseUSD -->
+      </class> <!-- com.example.selenium.ide.tests.DollarCourse -->
+      <class name="com.example.selenium.ide.tests.HaveClassTodayTest">
+        <test-method status="PASS" signature="testDayclass()[pri:0, instance:com.example.selenium.ide.tests.HaveClassTodayTest@4883b407]" name="testDayclass" duration-ms="14802" started-at="2017-09-07T00:44:11Z" finished-at="2017-09-07T00:44:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDayclass -->
+      </class> <!-- com.example.selenium.ide.tests.HaveClassTodayTest -->
+      <class name="com.example.selenium.ide.tests.ScheduleTest">
+        <test-method status="PASS" signature="testSchedule()[pri:0, instance:com.example.selenium.ide.tests.ScheduleTest@7d9d1a19]" name="testSchedule" duration-ms="14926" started-at="2017-09-07T00:44:25Z" finished-at="2017-09-07T00:44:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSchedule -->
+      </class> <!-- com.example.selenium.ide.tests.ScheduleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
