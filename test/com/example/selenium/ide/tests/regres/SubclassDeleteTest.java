@@ -14,7 +14,7 @@ public class SubclassDeleteTest {
 	private String baseUrl;
 	private WebDriverWait wait;
 
-	@BeforeClass
+	@BeforeMethod
 	public void setUp() {
 		System.setProperty("webdriver.gecko.driver", "resources\\geckodriver-v0.18.0-win64\\geckodriver.exe");
 		driver = new FirefoxDriver();
@@ -36,20 +36,18 @@ public class SubclassDeleteTest {
 		driver.findElement(By.name("typeName")).clear();
 		driver.findElement(By.name("typeName")).sendKeys("Test");
 		driver.findElement(By.id("clickmeshow")).click();
-		wait.until(ExpectedConditions.elementToBeClickable(By.id("myparam0")));
-		driver.findElement(By.id("myparam0")).clear();
+		wait.until(ExpectedConditions.elementToBeClickable(By.id("myparam0"))).clear();
 		driver.findElement(By.id("myparam0")).sendKeys("123450");
 		driver.findElement(By.id("myparam1")).clear();
 		driver.findElement(By.id("myparam1")).sendKeys("123450");
-		driver.findElement(By.xpath("//*[@value = 'linearParameters']"));
+		driver.findElement(By.xpath("//*[@value = 'linearParameters']")).click();
 		driver.findElement(By.id("valid")).click();
 	}
 
 	@Test
 	public void testConfirmMessageAppear() {
-		wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//td[text() = 'земельний']/following-sibling::*//*[@href]"))).click();
-		driver.findElement(By.xpath("//td[text() = 'земельний']/following-sibling::*//*[@href]")).click();
+		driver.findElement(By.xpath("//td[text() = 'Test']/following-sibling::*//*[@href]")).click();
+		driver.findElement(By.xpath("//td[text() = 'Test']/following-sibling::*//*[@href]")).click();
 
 		assertEquals(driver.findElement(By.className("bootbox-body")).getText(),
 				"Do you really want to delete this class?");
@@ -57,53 +55,54 @@ public class SubclassDeleteTest {
 
 	@Test
 	public void testCancelDelettingByX() {
-		wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//td[text() = 'земельний']/following-sibling::*//*[@href]"))).click();
-		// driver.findElement(By.xpath("//td[text() =
-		// 'земельний']/following-sibling::*/div/a")).click();
+		driver.findElement(By.xpath("//td[text() = 'Test']/following-sibling::*//*[@href]")).click();
+		assertEquals(driver.findElement(By.className("bootbox-body")).getText(),
+				"Do you really want to delete this class?");
 		driver.findElement(By.xpath("//div[@class='bootbox-body']/preceding-sibling::button")).click();
-		assertEquals(driver.findElement(By.xpath("//*[@id='datatable']//tr[1]/td[1]")).getText(), "земельний");
+		assertEquals(driver.findElement(By.xpath("//td[text() = 'Test']")).getText(), "Test");
 	}
 
 	@Test
 	public void testCancelDelettingByCancelButton() {
-		driver.findElement(By.xpath("//td[text() = 'Зайці']/following-sibling::*/div/a")).click();
+		driver.findElement(By.xpath("//td[text() = 'Test']/following-sibling::*/div/a")).click();
+		assertEquals(driver.findElement(By.className("bootbox-body")).getText(),
+				"Do you really want to delete this class?");
 		driver.findElement(By.xpath("//button[text() = 'Cancel']")).click();
 
-		assertEquals(driver.findElement(By.xpath("//*[@id='datatable']//tr[2]/td[1]")).getText(), "Зайці");
+		assertEquals(driver.findElement(By.xpath("//td[text() = 'Test']")).getText(), "Test");
 	}
 
 	@Test
 	public void testDeleteByOkButton() {
 
 		driver.findElement(By.xpath("//td[text() = 'Test']/following-sibling::*/div/a")).click();
-		driver.findElement(By.xpath("//button[text() = 'OK']")).click();
+		assertEquals(driver.findElement(By.className("bootbox-body")).getText(),
+				"Do you really want to delete this class?");
 
-		assertFalse(isElementPresent(By.partialLinkText("Test")));
+		driver.findElement(By.xpath("//button[text() = 'OK']")).click();
+		
+		assertEquals(driver.findElement(By.xpath("//td[text() = 'Test']")).getText(), "Test");
 	}
 
 	@Test // existing class is not deleted if resources already exist
 	public void testCancelDelettingBySystem() {
-		driver.findElement(By.xpath("//td[text() = 'земельний']/following-sibling::*//*[@href]")).click();
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text() = 'OK']"))).click();
+		driver.findElement(By.xpath("//td[text()='земельний']/following-sibling::*//*[@href]")).click();
+		assertEquals(driver.findElement(By.className("bootbox-body")).getText(),
+				"Do you really want to delete this class?");
+		driver.findElement(By.xpath("//button[text() = 'OK']")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("bootbox-body")));
 		assertEquals(driver.findElement(By.className("bootbox-body")).getText(),
 				"This subclass cannot be deleted because resources already exist");
 		driver.findElement(By.xpath("//button[text() = 'OK']")).click();
-		assertEquals(driver.findElement(By.xpath("//*[@id='datatable']//tr[1]/td[1]")).getText(), "земельний");
+		assertEquals(driver.findElement(By.xpath("//td[text()='земельний'")).getText(), "земельний");
 	}
 
-	@AfterClass
+	@AfterMethod
 	public void tearDown() {
-		driver.quit();
-	}
-
-	private boolean isElementPresent(By by) {
-		try {
-			driver.findElement(by);
-			return true;
-		} catch (NoSuchElementException e) {
-			return false;
+		if(driver.findElement(By.xpath("//td[text() = 'Test']")).getText() != null){
+			driver.findElement(By.xpath("//td[text() = 'Test']/following-sibling::*/div/a")).click();
+			driver.findElement(By.xpath("//button[text() = 'OK']")).click();
 		}
+		driver.quit();
 	}
 }

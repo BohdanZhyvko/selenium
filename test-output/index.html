@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\bdozz\AppData\Local\Temp\testng-eclipse--1561794600\testng-customsuite.xml</span>
+                    <span>C:\Users\bdozz\AppData\Local\Temp\testng-eclipse--1256536601\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.selenium.ide.tests.regres.SubclassDeleteTest" hash-for-method="testCancelDelettingBySystem">testCancelDelettingBySystem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,11 +121,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.selenium.ide.tests.regres.SubclassDeleteTest" hash-for-method="testCancelDelettingBySystem">testCancelDelettingBySystem</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.selenium.ide.tests.regres.SubclassDeleteTest" hash-for-method="testCancelDelettingByX">testCancelDelettingByX</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -122,22 +131,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.selenium.ide.tests.DollarCourse" hash-for-method="testCourseUSD">testCourseUSD</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.selenium.ide.tests.HaveClassTodayTest" hash-for-method="testDayclass">testDayclass</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.selenium.ide.tests.regres.SubclassDeleteTest" hash-for-method="testDeleteByOkButton">testDeleteByOkButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.selenium.ide.tests.ScheduleTest" hash-for-method="testSchedule">testSchedule</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -152,6 +146,71 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.selenium.ide.tests.regres.SubclassDeleteTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCancelDelettingBySystem">
+                  </a> <!-- testCancelDelettingBySystem -->
+                  <span class="method-name">testCancelDelettingBySystem</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: Given xpath expression &quot;//td[text() = &apos;земельний&apos;&quot; is invalid: SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-JTO9J50&apos;, ip: &apos;169.254.141.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\bdozz\AppData\Local\Temp\rust_mozprofile.nYfGrI1gZKp7, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0.1, platformVersion=10.0, moz:processID=1844, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: f97c2a4f-ec41-48bf-8dea-760ae6fc6d45
+*** Element info: {Using=xpath, value=//td[text() = &apos;земельний&apos;}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at com.example.selenium.ide.tests.regres.SubclassDeleteTest.testCancelDelettingBySystem(SubclassDeleteTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -163,13 +222,6 @@
                   <a name="testCancelDelettingByCancelButton">
                   </a> <!-- testCancelDelettingByCancelButton -->
                   <span class="method-name">testCancelDelettingByCancelButton</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCancelDelettingBySystem">
-                  </a> <!-- testCancelDelettingBySystem -->
-                  <span class="method-name">testCancelDelettingBySystem</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -195,55 +247,10 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.example.selenium.ide.tests.HaveClassTodayTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDayclass">
-                  </a> <!-- testDayclass -->
-                  <span class="method-name">testDayclass</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.example.selenium.ide.tests.ScheduleTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSchedule">
-                  </a> <!-- testSchedule -->
-                  <span class="method-name">testSchedule</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.example.selenium.ide.tests.DollarCourse</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCourseUSD">
-                  </a> <!-- testCourseUSD -->
-                  <span class="method-name">testCourseUSD</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\bdozz\AppData\Local\Temp\testng-eclipse--1561794600\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\bdozz\AppData\Local\Temp\testng-eclipse--1256536601\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -253,9 +260,6 @@
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.example.selenium.ide.tests.regres.SubclassDeleteTest&quot;/&gt;
-      &lt;class name=&quot;com.example.selenium.ide.tests.DollarCourse&quot;/&gt;
-      &lt;class name=&quot;com.example.selenium.ide.tests.HaveClassTodayTest&quot;/&gt;
-      &lt;class name=&quot;com.example.selenium.ide.tests.ScheduleTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -269,7 +273,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (4 classes)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -295,44 +299,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCourseUSD')
-data.setCell(0, 2, 'com.example.selenium.ide.tests.DollarCourse')
-data.setCell(0, 3, 24759);
+data.setCell(0, 1, 'testCancelDelettingBySystem')
+data.setCell(0, 2, 'com.example.selenium.ide.tests.regres.SubclassDeleteTest')
+data.setCell(0, 3, 1806);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testSchedule')
-data.setCell(1, 2, 'com.example.selenium.ide.tests.ScheduleTest')
-data.setCell(1, 3, 14926);
+data.setCell(1, 1, 'testDeleteByOkButton')
+data.setCell(1, 2, 'com.example.selenium.ide.tests.regres.SubclassDeleteTest')
+data.setCell(1, 3, 905);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testDayclass')
-data.setCell(2, 2, 'com.example.selenium.ide.tests.HaveClassTodayTest')
-data.setCell(2, 3, 14802);
+data.setCell(2, 1, 'testCancelDelettingByX')
+data.setCell(2, 2, 'com.example.selenium.ide.tests.regres.SubclassDeleteTest')
+data.setCell(2, 3, 800);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testDeleteByOkButton')
+data.setCell(3, 1, 'testCancelDelettingByCancelButton')
 data.setCell(3, 2, 'com.example.selenium.ide.tests.regres.SubclassDeleteTest')
-data.setCell(3, 3, 10783);
+data.setCell(3, 3, 797);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testCancelDelettingByCancelButton')
+data.setCell(4, 1, 'testConfirmMessageAppear')
 data.setCell(4, 2, 'com.example.selenium.ide.tests.regres.SubclassDeleteTest')
-data.setCell(4, 3, 5277);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testCancelDelettingBySystem')
-data.setCell(5, 2, 'com.example.selenium.ide.tests.regres.SubclassDeleteTest')
-data.setCell(5, 3, 1960);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testConfirmMessageAppear')
-data.setCell(6, 2, 'com.example.selenium.ide.tests.regres.SubclassDeleteTest')
-data.setCell(6, 3, 837);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testCancelDelettingByX')
-data.setCell(7, 2, 'com.example.selenium.ide.tests.regres.SubclassDeleteTest')
-data.setCell(7, 3, 829);
+data.setCell(4, 3, 768);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -359,55 +351,70 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.selenium.ide.tests.regres.SubclassDeleteTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+              <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCancelDelettingByCancelButton</span>
-                <span class="method-start">22491 ms</span>
+                <span class="method-start">20452 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21253 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23330 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCancelDelettingBySystem</span>
-                <span class="method-start">27774 ms</span>
+                <span class="method-start">41505 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">43333 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">45207 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCancelDelettingByX</span>
-                <span class="method-start">29750 ms</span>
+                <span class="method-start">63193 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63995 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">65700 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testConfirmMessageAppear</span>
-                <span class="method-start">30585 ms</span>
+                <span class="method-start">84042 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">84812 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">86439 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDeleteByOkButton</span>
-                <span class="method-start">31422 ms</span>
+                <span class="method-start">104691 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">42205 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.selenium.ide.tests.DollarCourse</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testCourseUSD</span>
-                <span class="method-start">43708 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.selenium.ide.tests.HaveClassTodayTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testDayclass</span>
-                <span class="method-start">68467 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.example.selenium.ide.tests.ScheduleTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testSchedule</span>
-                <span class="method-start">83269 ms</span>
-              </div> <!-- test-method -->
+                <span class="method-start">105600 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
